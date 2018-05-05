@@ -1,0 +1,47 @@
+@media only screen and (max-width: 767px) {
+
+  .home-wrapper {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+  }
+  .hero-content {
+    margin-bottom: 30px;
+  }
+  .navigation ul {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .navigation ul li {
+    height: 86px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 86px;
+  }
+  .navigation ul li a .icon {
+    font-size: 30px;
+    line-height: 86px;
+  }
+  .navigation ul li a .icon-bg {
+    bottom: -50px;
+    font-size: 50px;
+    height: 50px;
+    right: -50px;
+    width: 50px;
+  }
+  .navigation ul li a .text {
+    font-size: 13px;
+    line-height: 86px;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .about-content {
+    margin-top: 40px;
+  }
+  .navigation ul li:nth-child(n + 4) {
+    margin-bottom: 0px;
+  }
+}

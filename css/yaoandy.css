@@ -1,0 +1,388 @@
+/*=============================================
+=                姚韋辰的個人網站               =
+=============================================*/
+/*=============================================
+=            Section comment block            =
+=============================================*/
+html,
+body {
+  /* color: #fff; */
+  font-size: 15px;
+  font-weight: 400;
+  font-family: Helvetica, Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro",
+    "LiHei Pro", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei",
+    sans-serif;
+  height: 100%;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 10px;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+}
+a:hover {
+  text-decoration: none;
+}
+i,
+span {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*=============================================
+=                  PreLoader                 =
+=============================================*/
+#loading {
+  position: fixed;
+  min-height: 100%;
+  width: 100%;
+  z-index: 111;
+  top: 0;
+}
+.ball-scale-multiple > div {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/*=============================================
+=          Main Contaciner & Overlay          =
+=============================================*/
+.main-container {
+  background: rgba(0, 0, 0, 0) url(../img/bg.jpg) no-repeat scroll center center;
+  background-size: cover;
+  height: 100%;
+}
+.overlay {
+  height: 100%;
+  opacity: 0.8;
+  width: 100%;
+  -webkit-transition: background 1s ease 0s;
+  transition: background 1s ease 0s;
+}
+.home-overlay {
+  background: #ffd54f55;
+}
+.about-overlay {
+  background: #1e88e5;
+}
+.resume-overlay {
+  background: #00acc1;
+}
+.portfolio-overlay {
+  background: #00897b;
+}
+.service-overlay {
+  background: #27ae5f;
+}
+.blog-overlay {
+  background: #fb8c00;
+}
+.contact-overlay {
+  background: #c30052;
+}
+/*=============================================
+=                  Section                    =
+=============================================*/
+.section-wrapper {
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+.section.active {
+  opacity: 1;
+  z-index: 11;
+}
+.section {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+  z-index: -1;
+}
+.section-title {
+  margin-bottom: 70px;
+  padding: 10px 15px;
+  border-left: 5px solid #fff;
+}
+.section-title h1 {
+  margin: 0;
+  font-size: 36px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+.section-title p {
+  margin: 0;
+  letter-spacing: 2px;
+  font-size: 18px;
+  color: #fff;
+}
+
+/*=============================================
+=                Home Section                =
+=============================================*/
+.home-wrapper {
+  width: 600px;
+  margin: auto;
+}
+/* Hero Content */
+.hero-content {
+  background-color: #ffc107;
+  width: 300px;
+  padding: 30px 15px;
+}
+.hero-content img {
+  border: 10px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  height: 220px;
+  width: 220px;
+}
+.hero-content .social a {
+  color: #fff;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0 2px;
+  padding: 0 5px;
+}
+.hero-content h1 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 32px;
+  text-transform: capitalize;
+}
+.hero-content span {
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  text-transform: capitalize;
+}
+
+/*=============================================
+=               About Section               =
+=============================================*/
+.about-image img {
+  border: 10px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  margin: 0 auto;
+}
+.about-content h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+#about {
+  color: #fff;
+}
+/*=============================================
+=               Resume Section               =
+=============================================*/
+
+/*=============================================
+=              Portfolio Section              =
+=============================================*/
+
+/*=============================================
+=               Service Section               =
+=============================================*/
+
+/*=============================================
+=                Blog Section                =
+=============================================*/
+
+/*=============================================
+=               Contact Section               =
+=============================================*/
+
+/*=============================================
+=                 Navigation                 =
+=============================================*/
+.navigation {
+  width: 300px;
+}
+.navigation ul li {
+  display: block;
+  float: left;
+  height: 120px;
+  margin: 0 0 30px 30px;
+  width: 120px;
+}
+.navigation ul li a {
+  color: #fff;
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.navigation ul li a {
+  color: #fff;
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.navigation ul {
+  overflow: hidden;
+}
+.navigation ul li.about {
+  background: #2196f3;
+}
+.navigation ul li.resume {
+  background: #00bcd4;
+}
+.navigation ul li.portfolio {
+  background: #009688;
+}
+.navigation ul li.service {
+  background: #4caf50;
+}
+.navigation ul li.blog {
+  background: #ff5722;
+  margin-bottom: 0;
+}
+.navigation ul li.contact {
+  background: #e91e63;
+  margin-bottom: 0;
+}
+.navigation ul li a .icon {
+  display: block;
+  font-size: 45px;
+  line-height: 120px;
+}
+.navigation ul li a:hover .icon {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.navigation ul li a .fa {
+  font-size: 45px;
+  line-height: 120px;
+}
+.navigation ul li a span {
+  bottom: 0;
+  font-size: 16px;
+  left: 0;
+  line-height: 120px;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  top: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.navigation ul li a:hover span {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+/*=============================================
+=                Close Section                =
+=============================================*/
+.close-section {
+  cursor: pointer;
+  display: block;
+  height: 60px;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 60px;
+  z-index: -99999;
+}
+.close-section i {
+  display: block;
+  font-size: 22px;
+  line-height: 60px;
+}
+.close-section.active {
+  opacity: 1;
+  z-index: 111;
+}
+
+/*=============================================
+=                Close Section                =
+=============================================*/
+.close-section {
+  color: #fff;
+}
+
+/*=============================================
+=                  Bootstrap                  =
+=============================================*/
+.text-orange {
+  color: #ff8f00 !important;
+}
+.border-orange {
+  border-color: #ff8f00 !important;
+}
+.btn-orange {
+  color: #fff;
+  background-color: #ff8f00;
+  border-color: #ff8f00;
+}
+.btn-orange:hover {
+  color: #fff;
+  background-color: #ff6f00;
+  border-color: #ff6f00;
+}
+.btn-orange:not(:disabled):not(.disabled).active:focus,
+.btn-orange:not(:disabled):not(.disabled):active:focus,
+.show > .btn-orange.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 111, 0, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(255, 111, 0, 0.5);
+}
+.btn-orange:not(:disabled):not(.disabled).active,
+.btn-orange:not(:disabled):not(.disabled):active,
+.show > .btn-orange.dropdown-toggle {
+  color: #fff;
+  background-color: #ff6f00;
+  border-color: #ff6f00;
+}
+.btn-orange.focus,
+.btn-orange:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 111, 0, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(255, 111, 0, 0.5);
+}
+
+/*=============================================
+=                    Other                    =
+=============================================*/
+.fix {
+  overflow: hidden;
+}
+.hidden {
+  opacity: 0;
+  z-index: -11 !important;
+}
